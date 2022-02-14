@@ -50,7 +50,6 @@ class ContactAdapter(val context: Context, private val clickListener: OnItemClic
     fun updateContactList(contactList: List<Contact>) {
         allContactList.clear()
         allContactList.addAll(contactList)
-
         notifyDataSetChanged()
     }
 }

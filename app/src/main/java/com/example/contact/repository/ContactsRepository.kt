@@ -9,7 +9,6 @@ class ContactsRepository(private val contactDao: ContactDao) {
 
     val contactDatabase: ContactDatabase = ContactDatabase.INSTANCE!!
     val getAllContacts: LiveData<List<Contact>> = contactDao.getAllContacts()
-
     suspend fun insertContact(contact: Contact) {
         contactDao.insertContact(contact)
     }
