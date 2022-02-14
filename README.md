@@ -27,5 +27,5 @@ Contact Manager app in which user can add contacts, delete contacts. User also m
 
 ![add contact](https://github.com/yash1307-cse/Contact/blob/master/preview/add%20contact.jpg)
 
-![contact list](https://github.com/yash1307-cse/Contact/blob/master/preview/contact%20list.jpg)
+![contact list](https://github.com/yash1307-cse/Contact/blob/master/preview/contact_list.jpg)
 
