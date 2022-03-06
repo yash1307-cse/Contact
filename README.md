@@ -1,5 +1,5 @@
 # Contact Manager
-Contact Manager app in which user can add contacts, delete contacts. User also making calls from these app. 
+Contact Manager app in which user can add contacts, delete contacts. User also making calls from this app. 
 ## Features
 
 - Light/dark mode supported
