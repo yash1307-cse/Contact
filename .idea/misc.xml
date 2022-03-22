@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Contact/app/src/main/res/layout/activity_welcome_screen.xml" value="0.2421875" />
         <entry key="..\:/Contact/app/src/main/res/layout/contact_items.xml" value="0.264" />
         <entry key="..\:/Contact/app/src/main/res/layout/sample.xml" value="0.2421875" />
         <entry key="..\:/Jetpack Compose Tutorial/Contact/app/src/main/res/drawable/divider.xml" value="0.4" />

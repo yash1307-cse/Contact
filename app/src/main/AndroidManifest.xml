@@ -6,19 +6,26 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/ic_contact"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@mipmap/ic_contact"
         android:supportsRtl="true"
         android:theme="@style/Theme.Contact">
         <activity
-            android:name=".activity.MainActivity"
-            android:exported="true">
+            android:name=".activity.WelcomeScreen"
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+
         </activity>
     </application>
 
