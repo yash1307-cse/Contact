@@ -1,16 +1,11 @@
 # Contact Manager
-Contact Manager app in which user can add contacts, delete contacts. User also making calls from these app. 
-
-
-
+Contact Manager app in which user can add contacts, delete contacts. User also making calls from this app. 
 ## Features
 
 - Light/dark mode supported
 - Make calls
 - Add contacts
 - Delete contacts
-
-
 ## Tech Stack
 
 **Architecture:** MVVM (Model - View - ViewModel)
@@ -20,12 +15,9 @@ Contact Manager app in which user can add contacts, delete contacts. User also m
 **Database:**  Room 
 
 
-
-
-
 ## Screenshots
 
-![add contact](https://github.com/yash1307-cse/Contact/blob/master/preview/add%20contact.jpg)
-
-![contact list](https://github.com/yash1307-cse/Contact/blob/master/preview/contact_list.jpg)
+|   Add Contact    |     Contact List
+|---    |---
+  ![](https://github.com/yash1307-cse/Contact/blob/master/preview/add%20contact.jpg)    |   ![](https://github.com/yash1307-cse/Contact/blob/master/preview/contact_list.jpg)  
 
