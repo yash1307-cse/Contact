@@ -14,10 +14,12 @@ Contact Manager app in which user can add contacts, delete contacts. User also m
 
 **Database:**  Room 
 
+**Other:**  Kotlin Coroutines
+
 
 ## Screenshots
 
-|   Add Contact    |     Contact List
-|---    |---
-  ![](https://github.com/yash1307-cse/Contact/blob/master/preview/add%20contact.jpg)    |   ![](https://github.com/yash1307-cse/Contact/blob/master/preview/contact_list.jpg)  
+|   Add Contact    |     Contact List   |   Splash Screen   |
+|---    |---   |---
+  ![](https://github.com/yash1307-cse/Contact/blob/master/preview/add%20contact.jpg)    |   ![](https://github.com/yash1307-cse/Contact/blob/master/preview/contact_list.jpg)   |   ![](https://github.com/yash1307-cse/Contact/blob/master/preview/splash_screen.jpg)  |
 
