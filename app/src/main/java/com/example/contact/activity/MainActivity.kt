@@ -5,11 +5,9 @@ import android.content.Intent
 import android.content.pm.PackageManager
 import android.net.Uri
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
@@ -23,6 +21,7 @@ import com.example.contact.OnItemClick
 import com.example.contact.R
 import com.example.contact.data.Contact
 import com.example.contact.view_model.ContactViewModel
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity(), OnItemClick {
@@ -32,11 +31,14 @@ class MainActivity : AppCompatActivity(), OnItemClick {
     lateinit var contactAdapter: ContactAdapter
     lateinit var addContactBtn: FloatingActionButton
     lateinit var context: Context
+    lateinit var bottomSheetDialog: BottomSheetDialog
     private val PHONE_CALL_CODE: Int = 1234
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        bottomSheetDialog = BottomSheetDialog(this)
 
         givePermissionForCall(android.Manifest.permission.CALL_PHONE, PHONE_CALL_CODE)
 
@@ -51,7 +53,7 @@ class MainActivity : AppCompatActivity(), OnItemClick {
 
         recyclerView.adapter = contactAdapter
 
-        var itemDecoration = DividerItemDecoration(
+        val itemDecoration = DividerItemDecoration(
             this@MainActivity,
             DividerItemDecoration.VERTICAL
         )
@@ -73,11 +75,10 @@ class MainActivity : AppCompatActivity(), OnItemClick {
 
         addContactBtn.setOnClickListener {
 
-            val view = LayoutInflater.from(this).inflate(R.layout.add_contact_dialog, null)
+           val view = layoutInflater.inflate(R.layout.add_contact_dialog, null)
 
-            val mBuilder = AlertDialog.Builder(this)
-                .setView(view)
-                .show()
+            bottomSheetDialog.setContentView(view)
+            bottomSheetDialog.show()
 
             val submitBtn: Button = view.findViewById(R.id.submitContact)
             val addContactNameET: EditText = view.findViewById(R.id.addContactNameET)
@@ -95,7 +96,7 @@ class MainActivity : AppCompatActivity(), OnItemClick {
 
                     false -> {
                         contactsViewModel.insertContact(Contact(getContactName, getContactNo))
-                        mBuilder.dismiss()
+                        bottomSheetDialog.dismiss()
                     }
                 }
             }
